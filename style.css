@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-background-color: #1f2937;
+  --hero-main-text: #f9faf8;
+  --hero-secondary-text: #e5e7eb;
+  --button-color-call-to-action: #3882f6;
+}
+
+body {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: var(--dark-background-color);
+  /**/
+
+  flex: 1;
+  height: 100%;
+
+  /**/
+  padding: 1.1em 13em;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding-bottom: 140px;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo a {
+  color: var(--hero-main-text);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-size: 18px;
+}
+
+ul li a {
+  color: var(--hero-main-text);
+  text-decoration: none;
+  color: var(--hero-secondary-text);
+  font-weight: 350;
+}
+
+.bottom-header {
+  display: flex;
+}
+
+.bottom-header-left {
+  flex: 1;
+}
+
+.bottom-header-left h1 {
+  color: var(--hero-main-text);
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.bottom-header-left p {
+  color: var(--hero-secondary-text);
+  font-size: 18px;
+  font-weight: 400;
+  padding-right: 67px;
+}
+
+.bottom-header-left button {
+  background-color: var(--button-color-call-to-action);
+  color: var(--hero-main-text);
+  font-size: 17px;
+  font-weight: 600;
+  padding: 9px 35px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bottom-header-right {
+  flex: 1;
+}
+
+.bottom-header-right img {
+  background-color: grey;
+  color: white;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  padding: 50px 0 0 0;
+  background-color: var(--hero-main-text);
+}
+
+.main-top h1 {
+  color: var(--dark-background-color);
+  margin-bottom: 50px;
+  font-size: 37px;
+}
+
+.main-top-container {
+  display: flex;
+  gap: 50px;
+}
+
+.main-project {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  gap: 10px;
+}
+
+.illustration {
+  background-color: var(--hero-main-text);
+  height: 170px;
+  width: 170px;
+  border: #3882f6 4px solid;
+  border-radius: 15px;
+}
+
+.main-project p {
+  color: rgb(100, 100, 100);
+  font-size: 18px;
+  text-align: center;
+}
+
+.main-middle {
+  background-color: var(--hero-secondary-text);
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 310px;
+}
+
+.main-middle-text {
+  color: var(--dark-background-color);
+  font-size: 37px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.main-middle-author {
+  color: var(--dark-background-color);
+  font-size: 25px;
+  font-weight: bold;
+  align-self: flex-end;
+  margin-right: 40px;
+}
+
+.main-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  padding: 50px 0;
+  background-color: var(--hero-main-text);
+}
+
+.main-bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--button-color-call-to-action);
+  padding: 20px 120px;
+  height: 150px;
+  width: 64em;
+  border: none;
+  border-radius: 10px;
+}
+
+.main-bottom-left h2 {
+  color: var(--hero-main-text);
+}
+
+.main-bottom-left p {
+  color: var(--hero-main-text);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.main-bottom-right button {
+  background-color: var(--button-color-call-to-action);
+  color: var(--hero-main-text);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 9px 35px;
+  border: var(--hero-main-text) 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--dark-background-color);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 200px;
+}
+
+footer p {
+  color: var(--hero-main-text);
+  font-size: 17px;
+}
